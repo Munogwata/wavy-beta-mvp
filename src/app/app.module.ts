@@ -7,8 +7,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { NavigationBarComponent } from './reusable-components/navigation-bar/navigation-bar.component';
 import { FooterComponent } from './reusable-components/footer/footer.component';
 import { ResultComponent } from './pages/result/result.component';
-
-import { angularMath } from 'angular-ts-math';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,9 @@ import { angularMath } from 'angular-ts-math';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
