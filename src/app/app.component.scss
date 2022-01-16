@@ -1,0 +1,5 @@
+@use "../app/general-styles/" as gs;
+
+.heading-1 {
+  color: gs.$money-green;
+}

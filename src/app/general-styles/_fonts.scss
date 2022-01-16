@@ -1,0 +1,8 @@
+@use "../functions/pixel-convertor" as c;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+//font families
+$robto: "Roboto", sans-serif;
+
+//font sizes
+$h-1: c.toRem(55);

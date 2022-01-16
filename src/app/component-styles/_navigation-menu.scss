@@ -1,0 +1,11 @@
+@use "../general-styles/colors" as color;
+
+$general-space: 25px;
+
+//BEM naming convention
+.navigation-container_menu-item {
+  @include subheading-2 {
+    margin-right: $general-space;
+    color: color.$white;
+  }
+}

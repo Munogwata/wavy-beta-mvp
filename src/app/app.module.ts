@@ -8,6 +8,8 @@ import { NavigationBarComponent } from './reusable-components/navigation-bar/nav
 import { FooterComponent } from './reusable-components/footer/footer.component';
 import { ResultComponent } from './pages/result/result.component';
 
+import { angularMath } from 'angular-ts-math';
+
 @NgModule({
   declarations: [
     AppComponent,
