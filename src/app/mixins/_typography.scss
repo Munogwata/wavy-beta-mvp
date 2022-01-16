@@ -1,0 +1,6 @@
+@use "../general-styles/fonts" as fonts;
+
+@mixin subheading-2 {
+  font-size: fonts.$s-2;
+  font-weight: fonts.$regular;
+}

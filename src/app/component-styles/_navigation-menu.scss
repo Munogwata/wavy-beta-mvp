@@ -1,11 +1,15 @@
 @use "../general-styles/colors" as color;
+@use "../mixins/typography" as type;
 
 $general-space: 25px;
 
 //BEM naming convention
 .navigation-container_menu-item {
-  @include subheading-2 {
-    margin-right: $general-space;
-    color: color.$white;
+  @include type.subheading-2;
+}
+
+@media (max-width: 800px) {
+  .sidenav-closed {
+    display: none;
   }
 }
