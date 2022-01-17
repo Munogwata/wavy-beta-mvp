@@ -20,9 +20,9 @@
   <mat-sidenav-content>
     <mat-toolbar>
       <!--menu links-->
-      <span>
+      <span class="text-logo-padding">
         <a
-          class="menu-link"
+          class="logo-text"
           routerLink=""
           routerLinkActive="active"
           [routerLinkActiveOptions]="{ exact: true }"
@@ -87,13 +87,16 @@
           /></span>
         </a>
       </span>
+
       <span class="menu-item">
         <a
           class="menu-link"
           mat-list-item
           routerLink="Investor Profile"
           routerLinkActive="active"
-          ><span class="not-selected">Investor Profile</span>
+          ><span class="not-selected menu-item__investor-profile"
+            >Investor Profile</span
+          >
           <span class="selected"
             ><img
               src="/assets/images/wavy-logo.svg"
@@ -102,6 +105,7 @@
           /></span>
         </a>
       </span>
+
       <button
         type="button"
         aria-label="Toggle sidenav"

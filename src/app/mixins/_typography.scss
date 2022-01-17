@@ -4,3 +4,15 @@
   font-size: fonts.$s-2;
   font-weight: fonts.$regular;
 }
+
+@mixin wavy-text-logo {
+  font-size: fonts.$w-text_logo;
+  font-weight: fonts.$bold;
+  font-family: fonts.$montserrat;
+}
+
+.logo-text {
+  @include wavy-text-logo;
+  color: white;
+  text-decoration: none;
+}

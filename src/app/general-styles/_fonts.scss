@@ -1,11 +1,14 @@
 @use "../functions/pixel-convertor" as c;
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap");
 
 //font families
 $robto: "Roboto", sans-serif;
+$montserrat: "Montserrat", sans-serif;
 
 //font sizes
 $h: c.toRem(55);
+$w-text_logo: c.toRem(35);
 $s-1: c.toRem(22);
 $s-2: c.toRem(20);
 
