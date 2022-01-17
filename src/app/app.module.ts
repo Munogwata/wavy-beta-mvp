@@ -13,6 +13,8 @@ import { MatToolbar, MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenav } from '@angular/material/sidenav';
 import { MatListModule, MatNavList } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
+import { LogoComponent } from './reusable-components/logo/logo.component';
+import { LearnComponent } from './pages/learn/learn.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,10 @@ import { MatIconModule } from '@angular/material/icon';
     HomeComponent,
     FooterComponent,
     ResultComponent,
-    NavBarComponent
+    NavBarComponent,
+    LogoComponent,
+    LearnComponent,
+    
   ],
   imports: [
     BrowserModule,

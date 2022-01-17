@@ -18,10 +18,90 @@
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      <span>wavy-beta-mvp</span>
+    <mat-toolbar>
+      <!--menu links-->
+      <span>
+        <a
+          class="menu-link"
+          routerLink=""
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <span class="not-selected">Wavy</span>
+          <span class="selected"
+            ><img
+              src="/assets/images/wavy-logo.svg"
+              alt=""
+              class="selected-icon"
+          /></span>
+        </a>
+      </span>
+
       <span class="spacer"></span>
 
+      <span class="menu-item">
+        <a
+          class="menu-link"
+          mat-list-item
+          routerLink="Learn"
+          routerLinkActive="active"
+        >
+          <span class="not-selected">Learn</span>
+          <span class="selected"
+            ><img
+              src="/assets/images/wavy-logo.svg"
+              alt=""
+              class="selected-icon"
+          /></span>
+        </a>
+      </span>
+
+      <span class="menu-item">
+        <a
+          class="menu-link"
+          mat-list-item
+          routerLink="Financial Models"
+          routerLinkActive="active"
+          ><span class="not-selected">Financial Models</span>
+          <span class="selected"
+            ><img
+              src="/assets/images/wavy-logo.svg"
+              alt=""
+              class="selected-icon"
+          /></span>
+        </a>
+      </span>
+
+      <span class="menu-item">
+        <a
+          class="menu-link"
+          mat-list-item
+          routerLink="Disclaimer"
+          routerLinkActive="active"
+          ><span class="not-selected">Disclaimer</span>
+          <span class="selected"
+            ><img
+              src="/assets/images/wavy-logo.svg"
+              alt=""
+              class="selected-icon"
+          /></span>
+        </a>
+      </span>
+      <span class="menu-item">
+        <a
+          class="menu-link"
+          mat-list-item
+          routerLink="Investor Profile"
+          routerLinkActive="active"
+          ><span class="not-selected">Investor Profile</span>
+          <span class="selected"
+            ><img
+              src="/assets/images/wavy-logo.svg"
+              alt=""
+              class="selected-icon"
+          /></span>
+        </a>
+      </span>
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -33,5 +113,6 @@
       </button>
     </mat-toolbar>
     <!-- Add Content Here -->
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

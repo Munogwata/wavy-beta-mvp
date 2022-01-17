@@ -4,6 +4,44 @@
 $general-space: 25px;
 
 //BEM naming convention
-.navigation-container_menu-item {
+
+mat-toolbar {
+  background-color: color.$money-green;
+}
+
+.menu-item {
+  margin-right: 40px;
+}
+
+.selected-icon {
+  display: none;
+  width: 40px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.home-active {
+  .menu-link {
+    color: orange;
+  }
+}
+
+.menu-link {
+  color: white;
+  background-image: none;
+  text-decoration: none;
   @include type.subheading-2;
+}
+
+.active {
+  .selected-icon {
+    width: 40px;
+    height: 30px;
+    object-fit: cover;
+    display: inline-block;
+  }
+
+  .not-selected {
+    display: none;
+  }
 }
