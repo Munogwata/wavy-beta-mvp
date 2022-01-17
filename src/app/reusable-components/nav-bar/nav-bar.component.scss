@@ -1,4 +1,5 @@
 @use "../../component-styles/navigation-menu" as nm;
+@use "../../general-styles/" as gs;
 
 .sidenav-container {
   height: 100%;
@@ -18,11 +19,6 @@
   z-index: 1;
 }
 
-@media (min-width: 700px) {
-  .sidenav {
-    display: none;
-  }
-  button {
-    display: none;
-  }
+.hidden {
+  display: none;
 }

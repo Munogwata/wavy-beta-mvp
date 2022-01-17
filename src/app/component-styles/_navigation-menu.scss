@@ -7,9 +7,3 @@ $general-space: 25px;
 .navigation-container_menu-item {
   @include type.subheading-2;
 }
-
-@media (max-width: 800px) {
-  .sidenav-closed {
-    display: none;
-  }
-}

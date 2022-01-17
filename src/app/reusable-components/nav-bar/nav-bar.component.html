@@ -1,6 +1,7 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav
     #drawer
+    [ngClass]="{ hidden: !(isHandset$ | async) == true }"
     class="sidenav"
     fixedInViewport
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
@@ -19,6 +20,8 @@
   <mat-sidenav-content>
     <mat-toolbar color="primary">
       <span>wavy-beta-mvp</span>
+      <span class="spacer"></span>
+
       <button
         type="button"
         aria-label="Toggle sidenav"
