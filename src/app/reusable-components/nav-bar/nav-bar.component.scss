@@ -1,12 +1,14 @@
 @use "../../component-styles/navigation-menu" as nm;
 @use "../../general-styles/" as gs;
+@use "../../mixins/button-styles" as bs;
 
 .sidenav-container {
   height: 100%;
 }
 
 .sidenav {
-  width: 200px;
+  width: 216px;
+  background-color: gs.$money-green;
 }
 
 .sidenav .mat-toolbar {
@@ -19,6 +21,32 @@
   z-index: 1;
 }
 
+.mat-toolbar {
+  background-color: gs.$money-green;
+}
+
+.menu-button {
+  background-color: none;
+  color: white;
+}
+
 .hidden {
   display: none;
+}
+
+.toolbar_content {
+  display: none;
+}
+
+button {
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  @include bs.button-styled;
+  transform: translateY(-7px);
 }

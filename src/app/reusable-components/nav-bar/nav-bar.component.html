@@ -9,11 +9,30 @@
     [opened]="(isHandset$ | async) === false"
     position="end"
   >
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar>
+      <span class="spacer"></span>
+      <span
+        ><button
+          class="sidenav_button"
+          (click)="drawer.toggle()"
+          mat-icon-button
+        >
+          <mat-icon class="menu-button">close</mat-icon>
+        </button></span
+      ></mat-toolbar
+    >
+    <mat-toolbar>
+      <a class="text-logo-link" href="">Wavy</a>
+    </mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item class="menu-link" routerLink="Learn">Learn</a>
+      <a mat-list-item class="menu-link" routerLink="Financial Models"
+        >Financial Models</a
+      >
+      <a mat-list-item class="menu-link" routerLink="Disclaimer">Disclaimer</a>
+      <a mat-list-item class="menu-link" routerLink="Investor Profile"
+        >Investor Profile</a
+      >
     </mat-nav-list>
   </mat-sidenav>
 
@@ -39,7 +58,10 @@
 
       <span class="spacer"></span>
 
-      <span class="menu-item">
+      <span
+        class="menu-item"
+        [ngClass]="{ toolbar_content: !(isHandset$ | async) == false }"
+      >
         <a
           class="menu-link"
           mat-list-item
@@ -56,7 +78,10 @@
         </a>
       </span>
 
-      <span class="menu-item">
+      <span
+        class="menu-item"
+        [ngClass]="{ toolbar_content: !(isHandset$ | async) == false }"
+      >
         <a
           class="menu-link"
           mat-list-item
@@ -72,7 +97,10 @@
         </a>
       </span>
 
-      <span class="menu-item">
+      <span
+        class="menu-item"
+        [ngClass]="{ toolbar_content: !(isHandset$ | async) == false }"
+      >
         <a
           class="menu-link"
           mat-list-item
@@ -88,7 +116,10 @@
         </a>
       </span>
 
-      <span class="menu-item">
+      <span
+        class="menu-item"
+        [ngClass]="{ toolbar_content: !(isHandset$ | async) == false }"
+      >
         <a
           class="menu-link"
           mat-list-item
@@ -107,13 +138,17 @@
       </span>
 
       <button
-        type="button"
-        aria-label="Toggle sidenav"
         mat-icon-button
+        aria-label="Toggle sidenav"
         (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async"
+        [ngClass]="{ hidden: !(isHandset$ | async) == true }"
       >
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        <mat-icon
+          color="warn"
+          class="menu-button"
+          aria-label="Side nav toggle icon"
+          >menu</mat-icon
+        >
       </button>
     </mat-toolbar>
     <!-- Add Content Here -->
