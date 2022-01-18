@@ -1,0 +1,40 @@
+@use "../general-styles/layouts" as ls;
+@use "../general-styles/colors" as cs;
+
+@mixin footer-container__general-styles {
+  color: white;
+  margin-top: 18px;
+}
+
+.footer-container {
+  @include ls.three-unequal-columns;
+  background-color: cs.$money-green;
+  margin-bottom: 0;
+  bottom: 0px;
+  width: 100%;
+  margin-top: 75px;
+  height: auto;
+  padding-bottom: 20px;
+
+  &_box-one {
+    @include footer-container__general-styles;
+    width: 497px;
+    margin-left: 40px;
+    margin-right: 34px;
+    height: 135px;
+  }
+
+  &_box-two {
+    @include footer-container__general-styles;
+    margin-right: 34px;
+    width: 332px;
+    height: 153px;
+  }
+
+  &_box-three {
+    @include footer-container__general-styles;
+    width: 428px;
+    height: 139px;
+    margin-right: 34px;
+  }
+}

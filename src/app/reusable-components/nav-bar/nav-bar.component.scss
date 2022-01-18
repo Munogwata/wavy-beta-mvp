@@ -50,3 +50,9 @@ button:hover {
   @include bs.button-styled;
   transform: translateY(-7px);
 }
+
+mat-list-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}

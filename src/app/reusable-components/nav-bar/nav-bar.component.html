@@ -22,7 +22,7 @@
       ></mat-toolbar
     >
     <mat-toolbar>
-      <a class="text-logo-link" href="">Wavy</a>
+      <span> <a class="text-logo-link" routerLink="">Wavy</a></span>
     </mat-toolbar>
     <mat-nav-list>
       <a mat-list-item class="menu-link" routerLink="Learn">Learn</a>
@@ -30,9 +30,9 @@
         >Financial Models</a
       >
       <a mat-list-item class="menu-link" routerLink="Disclaimer">Disclaimer</a>
-      <a mat-list-item class="menu-link" routerLink="Investor Profile"
-        >Investor Profile</a
-      >
+      <a mat-list-item class="menu-link" routerLink="Investor Profile">
+        <span class="sidebar-investor-profile">Investor Profile</span>
+      </a>
     </mat-nav-list>
   </mat-sidenav>
 
@@ -153,5 +153,6 @@
     </mat-toolbar>
     <!-- Add Content Here -->
     <router-outlet></router-outlet>
+    <app-footer></app-footer>
   </mat-sidenav-content>
 </mat-sidenav-container>

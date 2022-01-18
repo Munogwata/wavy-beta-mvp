@@ -15,6 +15,7 @@ import { MatListModule, MatNavList } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { LogoComponent } from './reusable-components/logo/logo.component';
 import { LearnComponent } from './pages/learn/learn.component';
+import { TagsComponent } from './reusable-components/tags/tags.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,8 @@ import { LearnComponent } from './pages/learn/learn.component';
     NavBarComponent,
     LogoComponent,
     LearnComponent,
+    TagsComponent,
+ 
     
   ],
   imports: [
