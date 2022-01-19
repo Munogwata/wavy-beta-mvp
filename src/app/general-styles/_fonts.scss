@@ -7,11 +7,19 @@ $robto: "Roboto", sans-serif;
 $montserrat: "Montserrat", sans-serif;
 
 //font sizes
-$h: c.toRem(55);
+$h: c.toRem(55); //heading
 $w-text_logo: c.toRem(35);
 $s-1: c.toRem(22);
 $s-2: c.toRem(20);
+$f-h: c.toRem(25); //footer headings
+$b-1: c.toRem(18); //body-1 font-size
+$b-2: c.toRem(16);
+$c: c.toRem(14); //citations and labels
 
 //font-weighting
 $bold: 700;
 $regular: 400;
+
+//line-height
+$b-1-h: c.toRem(24);
+$b-2-h: c.toRem(20);

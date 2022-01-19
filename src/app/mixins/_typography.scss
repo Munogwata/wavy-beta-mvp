@@ -5,10 +5,38 @@
   font-weight: fonts.$regular;
 }
 
+@mixin subheading-2-bold {
+  font-size: fonts.$s-2;
+  font-weight: fonts.$bold;
+  text-transform: uppercase;
+}
+
 @mixin wavy-text-logo {
   font-size: fonts.$w-text_logo;
   font-weight: fonts.$bold;
   font-family: fonts.$montserrat;
+}
+
+@mixin body-1 {
+  font-size: fonts.$b-1;
+  line-height: fonts.$b-1-h;
+  font-family: fonts.$robto;
+}
+
+@mixin body-2 {
+  font-size: fonts.$b-2;
+  line-height: fonts.$b-2-h;
+  font-family: fonts.$robto;
+}
+
+@mixin subheading-3 {
+  @include body-2;
+  font-weight: fonts.$bold;
+}
+
+@mixin citation {
+  font-size: fonts.$c;
+  font-family: fonts.$robto;
 }
 
 .logo-text {

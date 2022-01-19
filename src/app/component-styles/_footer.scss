@@ -1,5 +1,7 @@
 @use "../general-styles/layouts" as ls;
 @use "../general-styles/colors" as cs;
+@use "../general-styles/fonts" as fs;
+@use "../mixins/typography" as ty;
 
 @mixin footer-container__general-styles {
   color: white;
@@ -14,27 +16,128 @@
   width: 100%;
   margin-top: 75px;
   height: auto;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 
   &_box-one {
     @include footer-container__general-styles;
     width: 497px;
-    margin-left: 40px;
+    margin-left: 50px;
     margin-right: 34px;
     height: 135px;
+
+    &__header {
+      font-family: fs.$montserrat;
+      font-size: fs.$f-h;
+      font-weight: fs.$bold;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    &__body &--link {
+      @include ty.body-1;
+    }
   }
 
   &_box-two {
     @include footer-container__general-styles;
     margin-right: 34px;
     width: 332px;
-    height: 153px;
+
+    &__heading {
+      @include ty.subheading-3;
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+
+    &__body {
+      @include ty.body-2;
+    }
   }
 
   &_box-three {
     @include footer-container__general-styles;
     width: 428px;
-    height: 139px;
     margin-right: 34px;
+
+    &__heading {
+      @include ty.subheading-2-bold;
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+
+    &__form {
+      background-color: white;
+      width: 315px;
+    }
+
+    &__form-container {
+      display: flex;
+      align-content: center;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    &__body {
+      @include ty.body-2;
+
+      &--emphasis {
+        @include ty.subheading-3;
+      }
+    }
+
+    &__input {
+      background-color: white;
+      text-decoration: white;
+      border: none;
+      width: 300px;
+
+      &--email-label {
+        color: cs.$lovely-lavendar;
+        display: inline-block;
+        margin-top: 5px;
+        margin-left: 5px;
+        @include ty.citation;
+      }
+
+      &--label {
+        @include ty.body-2;
+        display: inline-block;
+        background-color: white;
+        text-decoration: none;
+        color: black;
+        margin-top: 2px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+      }
+    }
+
+    &__input:focus {
+      outline: none;
+    }
+
+    &__input-placeholder {
+      background-color: white;
+    }
   }
+}
+
+a {
+  text-decoration: underline;
+  color: white;
+}
+
+.signup-button {
+  background-color: cs.$lovely-lavendar;
+  color: white;
+  width: 94px;
+  height: 35px;
+  display: inline-block;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+  border: none;
+  margin-left: 20px;
 }

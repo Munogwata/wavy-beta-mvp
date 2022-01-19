@@ -1,13 +1,17 @@
 <div class="footer-container">
   <span class="footer-container_box-one">
     <span>
-      <div>Wavy</div>
+      <div class="footer-container_box-one__header">Wavy</div>
       <div>
-        <span>
+        <span class="footer-container_box-one__body">
           Wavy is designed to help you easily make informed financial decisions.
           However, duly note Wavy is not an authorised or registered financial
-          institution. All users of Wavy are bound to the Wavy Terms and
-          Conditions.
+          institution. All users of Wavy are bound to the
+        </span>
+        <span>
+          <a class="footer-container_box-one--link" routerLink="Disclaimer"
+            >Wavy Terms and Conditions.</a
+          >
         </span>
       </div>
     </span>
@@ -19,20 +23,46 @@
     </div>
     <div>
       <span>
-        Working our way towards Better We are still working on Wavy to make it
-        better, as we are still developing the product. Therefore, we will be
-        frequently re-launching some updates of amended versions of Wavy
+        <span class="footer-container_box-two__heading">
+          Working our way towards Better.
+        </span>
+        <br />
+
+        <span class="footer-container_box-two__body">
+          We are still working on Wavy to make it better, as we are still
+          developing the product. Therefore, we will be frequently re-launching
+          new updates and versions of Wavy.
+        </span>
       </span>
     </div>
   </span>
   <span class="footer-container_box-three">
-    <div>A FREE WAVY ACCOUNT</div>
+    <div class="footer-container_box-three__heading">A FREE WAVY ACCOUNT</div>
     <div>
-      <span>
+      <span class="footer-container_box-three__body">
         Be amongst the first to know when Wavy accounts are available, and also
         do not miss out on Wavy’s latest updates. To be the first one informed
-        kindly sign up to the Wavy Newsletter.
+        kindly sign up to the
+        <span class="footer-container_box-three__body--emphasis">
+          Wavy Newsletter.
+        </span>
       </span>
+    </div>
+    <div class="footer-container_box-three__form-container">
+      <form class="footer-container_box-three__form">
+        <label
+          class="footer-container_box-three__input footer-container_box-three__input--email-label"
+          for="Email"
+          >Email</label
+        >
+        <input
+          id-="Email"
+          type="email"
+          class="footer-container_box-three__input footer-container_box-three__input--label"
+        />
+      </form>
+
+      <button class="signup-button" mat-raised-button>Sign Up</button>
     </div>
   </span>
 </div>

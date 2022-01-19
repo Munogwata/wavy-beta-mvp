@@ -16,6 +16,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { LogoComponent } from './reusable-components/logo/logo.component';
 import { LearnComponent } from './pages/learn/learn.component';
 import { TagsComponent } from './reusable-components/tags/tags.component';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -38,8 +39,11 @@ import { TagsComponent } from './reusable-components/tags/tags.component';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    
+    MatInputModule,
     MatIconModule,
+   
+  
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

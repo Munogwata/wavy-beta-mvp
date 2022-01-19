@@ -1,0 +1,15 @@
+@use "../mixins/typography" as ty;
+@use "../general-styles/colors" as cs;
+
+.beta-tag {
+  @include ty.body-1;
+  color: white;
+  background-color: cs.$sunset-where;
+  border-radius: 10px;
+  height: 35px;
+  width: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
