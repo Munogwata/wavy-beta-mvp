@@ -1,10 +1,11 @@
 @use "../../general-styles/layouts" as ls;
+@use "../../mixins/typography" as ty;
+@use "../../general-styles/colors" as cs;
 
 .wrapper {
   display: flex;
   width: auto;
   height: 100%;
-  background-color: blue;
   align-items: center;
   justify-content: center;
   padding-bottom: 80px;
@@ -12,8 +13,41 @@
 
 .call-to-action {
   @include ls.column-four-rows;
-}
 
-.test {
-  background-color: yellowgreen;
+  &_row-1 {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  &_row-2 {
+    margin-top: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+
+    &-heading {
+      @include ty.heading-1;
+      margin-right: 12px;
+
+      &--green {
+        @include ty.heading-1;
+        color: cs.$great-resignation;
+      }
+    }
+  }
+
+  &_row-3 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 80px;
+    margin-right: 80px;
+
+    &-body {
+      @include ty.subheading-1;
+    }
+  }
+
+  &_row-4 {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
 }

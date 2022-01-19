@@ -17,6 +17,7 @@ import { LogoComponent } from './reusable-components/logo/logo.component';
 import { LearnComponent } from './pages/learn/learn.component';
 import { TagsComponent } from './reusable-components/tags/tags.component';
 import {MatInputModule} from '@angular/material/input';
+import { SearchBarComponent } from './reusable-components/search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,8 @@ import {MatInputModule} from '@angular/material/input';
     LogoComponent,
     LearnComponent,
     TagsComponent,
+    SearchBarComponent,
+   
  
     
   ],

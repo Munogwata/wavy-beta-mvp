@@ -1,14 +1,28 @@
 @use "../general-styles/fonts" as fonts;
 
+@mixin heading-1 {
+  font-size: fonts.$h-1;
+  font-weight: fonts.$bold;
+  text-transform: capitalize;
+  font-family: fonts.$robto;
+}
+
+@mixin subheading-1 {
+  font-size: fonts.$s-1;
+  font-family: fonts.$robto;
+}
+
 @mixin subheading-2 {
   font-size: fonts.$s-2;
   font-weight: fonts.$regular;
+  font-family: fonts.$robto;
 }
 
 @mixin subheading-2-bold {
   font-size: fonts.$s-2;
   font-weight: fonts.$bold;
   text-transform: uppercase;
+  font-family: fonts.$robto;
 }
 
 @mixin wavy-text-logo {
