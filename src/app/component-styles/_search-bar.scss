@@ -10,6 +10,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 
   &__button {
     margin-left: 35px;
@@ -35,13 +36,34 @@
   }
 }
 
-@media (max-width: ms.$tablet) {
+@media (max-width: ms.$mobile) {
   .search-bar {
-    width: 740px;
-    height: 64px;
+    width: 250px;
+    height: 30px;
+
+    &__button {
+      margin-left: 5px;
+    }
   }
 
   .search-bar__input {
-    width: 300px;
+    width: 95px;
+    height: 20px;
+  }
+}
+
+@media (max-width: ms.$tablet) and (min-width: ms.$mobile) {
+  .search-bar {
+    width: 400px;
+
+    &__button {
+      margin-left: 10px;
+      margin-top: 2px;
+    }
+  }
+
+  .search-bar__input {
+    width: 200px;
+    height: 20px;
   }
 }

@@ -53,12 +53,29 @@
   }
 }
 
-@media (max-width: ms.$tablet) {
-  .call-to-action_row-1
-    .call-to-action_row-2
-    .call-to-action_row-3
-    .call-to-action_row-4 {
-    margin-left: 20px;
-    margin-right: 20px;
+@media (max-width: ms.$tablet) and (min-width: ms.$mobile) {
+  .call-to-action_row-2-heading {
+    @include ty.heading-3;
+  }
+
+  .call-to-action_row-2-heading--green {
+    @include ty.heading-3;
+  }
+  .call-to-action_row-3-body {
+    @include ty.body-1;
+  }
+}
+
+@media (max-width: ms.$mobile) {
+  .call-to-action_row-2-heading {
+    @include ty.heading-4;
+  }
+
+  .call-to-action_row-2-heading--green {
+    @include ty.heading-4;
+  }
+
+  .call-to-action_row-3 {
+    @include ty.body-2;
   }
 }

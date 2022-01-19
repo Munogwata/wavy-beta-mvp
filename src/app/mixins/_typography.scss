@@ -7,6 +7,18 @@
   font-family: fonts.$robto;
 }
 
+@mixin heading-3 {
+  font-size: fonts.$h-3;
+  font-weight: fonts.$bold;
+  font-family: fonts.$robto;
+}
+
+@mixin heading-4 {
+  font-size: fonts.$h-4;
+  font-weight: fonts.$bold;
+  font-family: fonts.$robto;
+}
+
 @mixin subheading-1 {
   font-size: fonts.$s-1;
   font-family: fonts.$robto;

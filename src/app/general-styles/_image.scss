@@ -1,5 +1,15 @@
+@use "../general-styles/media-queries" as ms;
+
 .logo-frame {
   width: 53px;
   height: 40.95px;
   object-fit: cover;
+}
+
+@media (max-width: ms.$mobile) {
+  .logo-frame {
+    width: 40px;
+    height: 30px;
+    object-fit: contain;
+  }
 }
