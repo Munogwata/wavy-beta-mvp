@@ -2,6 +2,7 @@
 @use "../general-styles/colors" as cs;
 @use "../general-styles/fonts" as fs;
 @use "../mixins/typography" as ty;
+@use "../general-styles/media-queries" as ms;
 
 @mixin footer-container__general-styles {
   color: white;
@@ -149,28 +150,28 @@ a {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: ms.$tablet) {
   .footer-container {
     flex-direction: column;
 
     &_box-one {
       width: auto;
-      margin-left: 35px;
-      margin-right: 35px;
+      margin-left: 40px;
+      margin-right: 40px;
       height: auto;
     }
 
     &_box-two {
       width: auto;
-      margin-left: 35px;
-      margin-right: 35px;
+      margin-left: 40px;
+      margin-right: 40px;
       height: auto;
     }
 
     &_box-three {
       width: auto;
-      margin-left: 35px;
-      margin-right: 35px;
+      margin-left: 40px;
+      margin-right: 40px;
       height: auto;
 
       &__form-container {

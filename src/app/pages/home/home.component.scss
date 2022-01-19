@@ -1,6 +1,7 @@
 @use "../../general-styles/layouts" as ls;
 @use "../../mixins/typography" as ty;
 @use "../../general-styles/colors" as cs;
+@use "../../general-styles/media-queries" as ms;
 
 .wrapper {
   display: flex;
@@ -49,5 +50,15 @@
   &_row-4 {
     margin-left: 80px;
     margin-right: 80px;
+  }
+}
+
+@media (max-width: ms.$tablet) {
+  .call-to-action_row-1
+    .call-to-action_row-2
+    .call-to-action_row-3
+    .call-to-action_row-4 {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }

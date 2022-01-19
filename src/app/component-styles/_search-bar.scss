@@ -1,5 +1,6 @@
 @use "../general-styles/colors" as cs;
 @use "../mixins/typography" as ty;
+@use "../general-styles/media-queries" as ms;
 
 .search-bar {
   border-radius: 35px;
@@ -31,5 +32,16 @@
 
   &__input:focus {
     outline: none;
+  }
+}
+
+@media (max-width: ms.$tablet) {
+  .search-bar {
+    width: 740px;
+    height: 64px;
+  }
+
+  .search-bar__input {
+    width: 300px;
   }
 }
