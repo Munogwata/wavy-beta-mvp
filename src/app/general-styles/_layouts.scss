@@ -3,3 +3,10 @@
   align-content: flex-start;
   align-items: flex-start;
 }
+
+@mixin column-four-rows {
+  display: flex;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}

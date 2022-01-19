@@ -1,7 +1,19 @@
-.box {
-  border: black;
-  border-radius: 10px;
-  border-width: 10px;
-  height: 40px;
-  width: 168px;
+@use "../../general-styles/layouts" as ls;
+
+.wrapper {
+  display: flex;
+  width: auto;
+  height: 100%;
+  background-color: blue;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+
+.call-to-action {
+  @include ls.column-four-rows;
+}
+
+.test {
+  background-color: yellowgreen;
 }

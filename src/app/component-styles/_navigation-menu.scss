@@ -48,6 +48,12 @@ mat-toolbar {
   cursor: pointer;
 }
 
+.sidenav-toolbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .menu-link {
   @include link;
   @include type.subheading-2;
@@ -56,6 +62,7 @@ mat-toolbar {
 .text-logo-link {
   @include link;
   @include type.wavy-text-logo;
+  margin-left: 15px;
 }
 
 .text-logo-padding {
