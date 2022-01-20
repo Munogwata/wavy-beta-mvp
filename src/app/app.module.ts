@@ -19,6 +19,11 @@ import { TagsComponent } from './reusable-components/tags/tags.component';
 import {MatInputModule} from '@angular/material/input';
 import { SearchBarComponent } from './reusable-components/search-bar/search-bar.component';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { ResultsBarComponent } from './reusable-components/results-bar/results-bar.component';
+import { ChartComponent } from './reusable-components/chart/chart.component';
+import { PerformanceIndicatorComponent } from './reusable-components/performance-indicator/performance-indicator.component';
+import { NgChartsModule } from 'ng2-charts';
+
 
 @NgModule({
   declarations: [
@@ -31,6 +36,10 @@ import {MatGridListModule} from '@angular/material/grid-list';
     LearnComponent,
     TagsComponent,
     SearchBarComponent,
+    ResultsBarComponent,
+    ChartComponent,
+    PerformanceIndicatorComponent,
+  
    
  
     
@@ -46,6 +55,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatInputModule,
     MatIconModule,
     MatGridListModule,
+    NgChartsModule,
    
   
     

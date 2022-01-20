@@ -1,1 +1,34 @@
-<p>result works!</p>
+<div class="wrapper">
+  <span class="results-bar-wrapper">
+    <app-results-bar></app-results-bar>
+  </span>
+
+  <span class="row-1">
+    <mat-grid-list cols="2" gutterSize="15px" row="2">
+      <mat-grid-tile class="row-1-column-1">
+        <span class="row-1-content">
+          <span class="symbol">Symbol: TBS</span>
+          <span class="company-name">Company name</span>
+          <span class="indicator-lables">Price</span>
+          <span>
+            <app-chart></app-chart>
+          </span>
+          <span class="chart"> </span>
+          <span class="chart-indicator">
+            <span class="chart-indicator_symbol"></span>
+            <span class="chart-indicator_content"
+              >The price is trading in what can be regarded as an uptrend.</span
+            >
+          </span>
+          <span class="indicator-lables">Performance</span>
+          <span class="performance-description"
+            >AAPL’s performance has been compared to the performance of Wavy
+            selected financial market benchmarks.</span
+          >
+          <span> </span>
+        </span>
+      </mat-grid-tile>
+      <mat-grid-tile>2</mat-grid-tile>
+    </mat-grid-list>
+  </span>
+</div>

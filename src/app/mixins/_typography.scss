@@ -24,6 +24,11 @@
   font-family: fonts.$robto;
 }
 
+@mixin subheading-1-bold {
+  @include subheading-1;
+  font-weight: fonts.$bold;
+}
+
 @mixin subheading-2 {
   font-size: fonts.$s-2;
   font-weight: fonts.$regular;
@@ -34,6 +39,12 @@
   font-size: fonts.$s-2;
   font-weight: fonts.$bold;
   text-transform: uppercase;
+  font-family: fonts.$robto;
+}
+
+@mixin subheading-4 {
+  font-size: fonts.$b-1;
+  font-weight: fonts.$bold;
   font-family: fonts.$robto;
 }
 

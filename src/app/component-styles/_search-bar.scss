@@ -1,6 +1,7 @@
 @use "../general-styles/colors" as cs;
 @use "../mixins/typography" as ty;
 @use "../general-styles/media-queries" as ms;
+@use "../mixins/button-styles" as bs;
 
 .search-bar {
   border-radius: 35px;
@@ -13,12 +14,7 @@
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 
   &__button {
-    margin-left: 35px;
-    margin-right: 35px;
-    border-radius: 50%;
-    border: none;
-    background-color: cs.$lovely-lavendar;
-    color: white;
+    @include bs.icon-button;
   }
 
   &__input {

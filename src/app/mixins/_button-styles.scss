@@ -6,3 +6,12 @@
   color: #fff;
   border-radius: 50%;
 }
+
+@mixin icon-button {
+  margin-left: 35px;
+  margin-right: 35px;
+  border-radius: 50%;
+  border: none;
+  background-color: c.$lovely-lavendar;
+  color: white;
+}
