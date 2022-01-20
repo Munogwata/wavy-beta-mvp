@@ -18,6 +18,7 @@ import { LearnComponent } from './pages/learn/learn.component';
 import { TagsComponent } from './reusable-components/tags/tags.component';
 import {MatInputModule} from '@angular/material/input';
 import { SearchBarComponent } from './reusable-components/search-bar/search-bar.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { SearchBarComponent } from './reusable-components/search-bar/search-bar.
     MatListModule,
     MatInputModule,
     MatIconModule,
+    MatGridListModule,
    
   
     
