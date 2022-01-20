@@ -5,13 +5,15 @@ import { FinancialModelsComponent } from './pages/financial-models/financial-mod
 import { HomeComponent } from './pages/home/home.component';
 import { InvestorProfileComponent } from './pages/investor-profile/investor-profile.component';
 import { LearnComponent } from './pages/learn/learn.component';
+import { ResultComponent } from './pages/result/result.component';
 
 const routes: Routes = [
 {path: '', component: HomeComponent},
 {path: 'Learn', component: LearnComponent },
 {path: 'Financial Models', component: FinancialModelsComponent},
 {path: 'Disclaimer', component: DisclaimerComponent},
-{path: 'Investor Profile', component: InvestorProfileComponent}
+{path: 'Investor Profile', component: InvestorProfileComponent},
+{path: 'Results', component: ResultComponent},
 
 
 ];

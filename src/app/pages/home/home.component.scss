@@ -37,13 +37,14 @@
   }
 
   &_row-3 {
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 15px;
     margin-left: 80px;
     margin-right: 80px;
+    margin-bottom: 25px;
 
     &-body {
       @include ty.subheading-1;
+      display: inline;
     }
   }
 
