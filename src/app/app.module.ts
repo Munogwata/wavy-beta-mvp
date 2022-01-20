@@ -23,6 +23,8 @@ import { ResultsBarComponent } from './reusable-components/results-bar/results-b
 import { ChartComponent } from './reusable-components/chart/chart.component';
 import { PerformanceIndicatorComponent } from './reusable-components/performance-indicator/performance-indicator.component';
 import { NgChartsModule } from 'ng2-charts';
+import { CircleIndicatorComponent } from './reusable-components/circle-indicator/circle-indicator.component';
+import { UserCalculatorComponent } from './reusable-components/user-calculator/user-calculator.component';
 
 
 @NgModule({
@@ -39,6 +41,8 @@ import { NgChartsModule } from 'ng2-charts';
     ResultsBarComponent,
     ChartComponent,
     PerformanceIndicatorComponent,
+    CircleIndicatorComponent,
+    UserCalculatorComponent,
   
    
  

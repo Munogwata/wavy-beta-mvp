@@ -1,0 +1,17 @@
+@use "../mixins/typography" as ty;
+@use "../general-styles/colors" as cs;
+
+.performance-indicator-container {
+  display: flex;
+}
+
+.performance-info {
+  margin-left: 15px;
+  @include ty.body-2;
+  display: flex;
+  flex-direction: column;
+}
+
+.relative-returns {
+  color: cs.$royal-purple;
+}

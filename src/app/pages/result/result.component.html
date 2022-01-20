@@ -3,32 +3,46 @@
     <app-results-bar></app-results-bar>
   </span>
 
-  <span class="row-1">
-    <mat-grid-list cols="2" gutterSize="15px" row="2">
-      <mat-grid-tile class="row-1-column-1">
-        <span class="row-1-content">
-          <span class="symbol">Symbol: TBS</span>
-          <span class="company-name">Company name</span>
-          <span class="indicator-lables">Price</span>
-          <span>
-            <app-chart></app-chart>
-          </span>
-          <span class="chart"> </span>
-          <span class="chart-indicator">
-            <span class="chart-indicator_symbol"></span>
-            <span class="chart-indicator_content"
-              >The price is trading in what can be regarded as an uptrend.</span
-            >
-          </span>
-          <span class="indicator-lables">Performance</span>
-          <span class="performance-description"
-            >AAPL’s performance has been compared to the performance of Wavy
-            selected financial market benchmarks.</span
-          >
-          <span> </span>
+  <!--First Column-->
+  <span class="content-container">
+    <span class="column-1">
+      <span class="column-1_symbol">Symbol: TBS</span>
+      <span class="column-1_company-name">TBS company name</span>
+      <span class="column-1_price">Price</span>
+      <span class="column-1_chart"><app-chart></app-chart></span>
+      <span class="column-1_chart-indicator">
+        <span class="column-1_small-symbol"></span>
+        <span class="column-1_chart-trend">
+          chart is trending in an uptrend
         </span>
-      </mat-grid-tile>
-      <mat-grid-tile>2</mat-grid-tile>
-    </mat-grid-list>
+      </span>
+      <span class="column-1_indicator-label"> Performance </span>
+      <span class="column-1_performance-descr"
+        >AAPL’s performance has been compared to the performance of Wavy
+        selected financial market benchmarks.</span
+      >
+      <span class="column-1_indicator">
+        <app-performance-indicator> </app-performance-indicator>
+      </span>
+      <span class="column-1_indicator">
+        <app-performance-indicator> </app-performance-indicator>
+      </span>
+      <span class="column-1_indicator">
+        <app-performance-indicator> </app-performance-indicator>
+      </span>
+    </span>
+
+    <!--Middle Column-->
+    <span class="column-2">
+      <span class="column-2-heading">
+        AAPL stocks have average annual rate of return of 7%
+      </span>
+      <span>
+        <app-user-calculator></app-user-calculator>
+      </span>
+    </span>
+
+    <!--Last Column-->
+    <span>3</span>
   </span>
 </div>

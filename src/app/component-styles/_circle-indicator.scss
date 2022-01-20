@@ -1,0 +1,9 @@
+@use "../general-styles/colors" as cs;
+
+.circle-indicator {
+  width: 10px;
+  height: 10px;
+  background-color: cs.$sky-blue;
+  display: inline-block;
+  border-radius: 50%;
+}
